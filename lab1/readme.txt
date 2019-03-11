@@ -68,4 +68,46 @@ int numOfCycles
     funcitons that move the cards around
 ...............................................................................
 
+bool distributeCards(int &left, int &right)
+"""""""""""""""""""""""""""""""""""""""""""
+
+takes two pointers to two intergers. compares the numbers and redistributes
+them changing the left and right values.
+
+the funciton wants both sides to be equal
+
+if both sides are equal the function does nothing 
+
+if it is not the function takes the sum of both sides and puts half
+in left and half in right
+
+in the event that an odd number of cards is presented the remaining extra card
+will be on the rigth side
+
+if an odd number of cards is already evenly split with the remainder on the right side 
+the funciton does nothing
+
+the function returns true if it doesnt have to do anyhting
+and false if it has to change the left and right variables to be equal
+
+...............................................................................
+
+void printDesks(int* desks,int size)
+""""""""""""""""""""""""""""""""""""
+
+takes in an int pointer and an int size
+
+these are used to print an array of values on the heap
+
+it will itterate through the array and cout your array as a comma-seperated
+list of values, fitting ten values on each line
+
+EX. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
+    21
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
 
