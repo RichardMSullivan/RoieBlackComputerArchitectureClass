@@ -38,9 +38,8 @@ to model the cards I will use an array. each index will represent a desk and
 the "students" will fit inbetween the desks. this means that there will be one
 more desk than students.
 
-I created the array with a template because templates are created at
-compile time, meaning I can create an array of an unspecified size
-and type easily
+I created a pointer to access the array due to the fact that it had to be
+created dynamially on the heap
 
 because I am just running the same function over and over the program will live
 in a for loop where I will run the function and update the array of cards
@@ -51,10 +50,10 @@ in a for loop where I will run the function and update the array of cards
 description of variables and functions
 -------------------------------------------------------------------------------
 
-Struct Array
-""""""""""""
-    this struct holds an array that can be created with template arguments
-    the constructor sets all the values to be zero
+deskPtr
+"""""""
+    this pointer looks at an array created on the heap that holds intergers
+    and is of size numOfStudents + 1
 ...............................................................................
 
 int numOfCards and int numOfstudents

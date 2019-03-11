@@ -1,23 +1,13 @@
 #include <iostream>
 #include <string>
 
-template<typename T,int SIZE>
-struct Array{
-    public:
-        T desk[SIZE];
-        int size = SIZE;
-
-    Array<T,SIZE>();
-
-};
-
 int main(){
 
     //setup start
 
     std::string input; //string to hold user input
-    int numOfStudents; // how many students
-    int numOfCards;    //how many cards
+    int numOfStudents; //  how many students
+    int numOfCards; // how many cards
 
     std::cout<< "enter the number of students in the simulation:";
     std::cin>> input;//take in how many students as a string
@@ -29,19 +19,11 @@ int main(){
 
     numOfCards = std::stoi(input);//convert string to int and save in num of cards
 
-    Array<int, numOfStudents + 1> cards;//create an array of size num of students +1
-    cards.desk[0] = numOfCards;//set the first index to hold a stack of all the cards
+    int* deskPtr = new int[numOfStudents +1] ;//create an array of size num of students +1
+    deskPtr[0] = numOfCards;//set the first index to hold a stack of all the cards
 
     //setup complete
 
     return 0;
 }
 
-template<typename T, int SIZE >
-Array<T,SIZE>::Array(){
-    
-    for(int i = 0; i < SIZE; i++){
-        array[i] = 0;
-    }
-
-}
