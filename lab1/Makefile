@@ -8,7 +8,7 @@ OBJS = ./src/main.o
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	g++ -o $(TARGET) $^ $(OBJS)
+	g++ -o $(TARGET) $^
 
 $(OBJS): $(FILES)
 	g++ -c $< -o $@
